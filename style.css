@@ -1,0 +1,125 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9 !important;
+    color: #333;
+}
+
+/* Main container */
+.container {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+h4 {
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Form */
+#appointmentForm {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+/* Add button */
+#submitBtn {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#submitBtn:hover {
+    background: #1d4ed8;
+}
+
+/* Appointment list */
+#appointmentList {
+    list-style: none;
+    padding: 0;
+}
+
+#appointmentList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background: #f8fafc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+#appointmentList li div:first-child {
+    flex: 1;
+}
+
+/* Edit button */
+.btn-warning {
+    background: #f59e0b !important;
+    color: white !important;
+    border: none;
+}
+
+/* Delete button */
+.btn-danger {
+    background: #dc2626 !important;
+    color: white !important;
+    border: none;
+}
+
+/* Message */
+#message {
+    font-weight: bold;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    #appointmentList li {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
